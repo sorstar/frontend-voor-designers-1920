@@ -1,16 +1,40 @@
-html{
-  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+@font-face {
+    font-family: 'Odibee Sans';
+    src: url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+html {
+    background-color: #666366;
+    box-sizing: border-box;
+    color: white;
+    /* https://css-tricks.com/box-sizing/ */
+    /*  background:#eee;*/
+    /*
+  background: url("../img/flagF4D.png") center no-repeat;*/
 }
-body{
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 30em;
+    margin: 1em auto;
+    padding: 1em;
+    background: darkgray;
+    border-radius: 1em;
+    box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+h1 {
+    margin-left: 300px;
+    margin-top: -50px;
+    font-family: 'Odibee Sans';
 }
