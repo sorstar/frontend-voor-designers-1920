@@ -1,5 +1,6 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
+const video = document.querySelector('video');
 // link van alle films
 let requestURL = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json';
 let request = new XMLHttpRequest();
@@ -22,22 +23,28 @@ request.onload = function() {
 }
 
 function populateHeader(jsonObj) {
-    // Creer Header
+    // Creëert Header
     const myH1 = document.createElement('h1');
     myH1.textContent = jsonObj[0].title;
     header.appendChild(myH1);
 
-    // Creer paragraaf
-    const myPara = document.createElement('p');
-    myPara.textContent = 'Plot: ' + jsonObj[0].plot + ' // Release date: ' + jsonObj[0].release_date;
-    header.appendChild(myPara);
-
-    // Creer Img
+    // Creëert Img 
     const myImg = document.createElement('img');
     myImg.src = jsonObj[0].cover;
     header.appendChild(myImg);
 
+
+    // Creëert paragraaf
+    const myPara = document.createElement('p');
+    myPara.textContent = 'Plot: ' + jsonObj[0].plot + ' // Release date: ' + jsonObj[0].release_date;
+    header.appendChild(myPara);
+
     // Laat trailer zien
+    const myTrailer = document.createElement('video');
+    myTrailer.src = jsonObj[0].trailer('video');
+    video.appendChild(myTrailer);
+
+
+
 
 }
-s

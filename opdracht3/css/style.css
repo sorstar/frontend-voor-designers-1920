@@ -1,0 +1,152 @@
+    @font-face {
+        font-family: 'Baloo Bhaina 2', cursive;
+        src: url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500;800&display=swap');
+    }
+    /* || general styles */
+    
+    body {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #92A8D1;
+    }
+    
+    nav {
+        background-color: #EFC050;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 5px 1%;
+        margin-left: -250px;
+        margin-right: -240px;
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .2);
+        /* shadow bron: https://generatepress.com/forums/topic/shadow-under-nav-bar/ */
+    }
+    /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_anim_search*/
+    
+    nav input {
+        font-family: 'Baloo Bhaina 2', cursive;
+        width: 100px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-size: 12px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        margin-left: 500px;
+    }
+    
+    input:focus {
+        width: 18%;
+    }
+    
+    li,
+    a {
+        font-family: 'Baloo Bhaina 2', cursive;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    a {
+        list-style: none;
+    }
+    
+    a:focus {
+        outline: 3px dashed purple;
+    }
+    
+    ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    ul li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    ul li a:hover {
+        color: #D65076;
+    }
+    
+    .f {
+        font-size: 22px;
+    }
+    
+    h1,
+    p {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: white;
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 64px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 50px;
+        margin-left: -30px;
+        padding: 0px;
+        text-align: left;
+    }
+    
+    .hr {
+        border: 1px solid white;
+    }
+    
+    .hr2 {
+        border: 1px solid white;
+        margin-top: 40px;
+    }
+    
+    img {
+        width: 330px;
+        margin-top: -60px;
+        margin-left: 235px;
+        -webkit-box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        -moz-box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        /* shadow gemaakt met: https://www.cssmatic.com/box-shadow*/
+    }
+    
+    img:focus {
+        outline: 3px dashed purple;
+    }
+    
+    #pp {
+        font-size: 20px;
+        margin-left: 140px;
+        margin-bottom: -1px;
+        background-color: #EFC050;
+        border-radius: 5px 5px 0px 0px;
+        padding-left: 10px;
+        padding-right: 6px;
+        width: 130px;
+    }
+    
+    video {
+        width: 500px;
+        margin-left: 140px;
+        -webkit-box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        -moz-box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        box-shadow: -2px 1px 17px -4px rgba(128, 124, 128, 1);
+        /* shadow gemaakt met: https://www.cssmatic.com/box-shadow*/
+    }
+    
+    footer {
+        font-family: 'Baloo Bhaina 2', cursive;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    =
